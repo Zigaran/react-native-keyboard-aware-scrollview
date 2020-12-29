@@ -126,7 +126,7 @@ export default class KeyboardAwareBase extends Component {
         return;
       }
 
-      const bottomYOffset = this._keyboardAwareView.contentSize.height - this._keyboardAwareView.layout.height + this._keyboardAwareView.props.contentInset.bottom;
+      const bottomYOffset = this._keyboardAwareView.contentSize.height - this._keyboardAwareView.layout.height + this._keyboardAwareView?.props?.contentInset?.bottom;
       this._keyboardAwareView.scrollTo({x: 0, y: bottomYOffset, animated: scrollAnimated});
     }
   }
